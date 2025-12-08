@@ -141,7 +141,7 @@ params:
       TODO
 
 
-    image: /images/hero.svg
+    #image: /images/hero.svg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -165,7 +165,7 @@ params:
   program:
     enable: true
     title: "Program"
-    image: "/images/me.png"
+    #image: "/images/me.png"
     content: |-
       TODO
 
@@ -175,7 +175,7 @@ params:
   about:
     enable: true
     title: "About"
-    image: "/images/me.png"
+    #image: "/images/me.png"
     content: |-
       TODO
 
