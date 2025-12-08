@@ -1,4 +1,4 @@
-baseURL: "https://hpcasia26.github.io"
+baseURL: "https://pdi.dev/hpcasia26.github.io"
 languageCode: "en-us"
 title: "PDI tutorial @SCA/HPCAsia 2026"
 theme: hugo-profile
