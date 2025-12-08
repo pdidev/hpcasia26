@@ -1,4 +1,4 @@
-baseURL: "https://pdi.dev/hpcasia26.github.io"
+baseURL: "https://pdi.dev/hpcasia26"
 languageCode: "en-us"
 title: "PDI tutorial @SCA/HPCAsia 2026"
 theme: hugo-profile
@@ -62,7 +62,7 @@ params:
   title: "PDI tutorial"
   description: SCA/HPCAsia 2026
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/pdi-logo.png"
+  favicon: "/fav.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
