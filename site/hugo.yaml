@@ -1,6 +1,7 @@
-baseURL: "https://pdi.dev/hpcasia26"
+baseURL: "https://pdi.dev/hpcasia26/"
+canonifyURLs: true
 languageCode: "en-us"
-title: "PDI tutorial @SCA/HPCAsia 2026"
+title: "PDI tutorial"
 theme: hugo-profile
 
 outputs:
@@ -124,7 +125,6 @@ params:
     enableSeparator: false
     menus:
       disableAbout: false
-      disableProgram: false
       disableExperience: true
       disableEducation: true
       disableProjects: true
@@ -160,16 +160,6 @@ params:
       #customIcons:
       #  - icon: /fav.png
       #    url: "https://example.com"
-  
-  # Program
-  program:
-    enable: true
-    title: "Program"
-    #image: "/images/me.png"
-    content: |-
-      TODO
-
-
 
   # About
   about:
