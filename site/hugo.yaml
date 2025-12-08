@@ -29,13 +29,13 @@ markup:
     renderer:
       unsafe: true
 
-#Menus:
-#  main:
-#    - identifier: blog
-#      name: Blog
-#      title: Blog posts
-#      url: /blogs
-#      weight: 1
+Menus:
+  main:
+    - identifier: program
+      name: Program
+      title: Program
+      url: /program
+      weight: 1
 #    - identifier: gallery
 #      name: Gallery
 #      title: Blog posts
@@ -60,8 +60,8 @@ markup:
     #   weight: 2
 
 params:
-  title: "PDI tutorial"
-  description: SCA/HPCAsia 2026
+  title: "PDI tutorial @SCA/HPCAsia 2026"
+  description: "Decoupling I/O in HPC Codes with PDI: From File-based I/O to In Situ Data Analytics"
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -135,13 +135,16 @@ params:
   hero:
     enable: true
     intro: ""
-    title: "SCA/HPCAsia 2026"
-    subtitle: "PDI tutorial"
+    title: "PDI tutorial @SCA/HPCAsia 2026"
+    subtitle: "Decoupling I/O in HPC Codes with PDI: From File-based I/O to In Situ Data Analytics"
     content: |-
-      TODO
+      As HPC simulations scale toward exascale, I/O becomes a critical bottleneck due to the growing disparity between compute 
+      performance and storage bandwidth. Traditional post-hoc output models struggle with the volume and velocity of generated data. 
+      The Parallel Data Interface (PDI) offers a lightweight and flexible solution by decoupling I/O, filtering, and analysis 
+      logic from the simulation code. Through a declarative configuration system and a plugin-based architecture, PDI enables 
+      simulation developers to expose data buffers and trigger events without embedding I/O decisions directly into their application. PDI offers a simple API in C/C++, Fortran, and Python. This full-day tutorial introduces PDI and its ecosystem of plugins: sequential and parallel HDF5 for file output, user-code and pycall for in-process custom logic execution, DEISA for in situ analytics, and Catalyst for live ParaView-based visualization. Through a combination of theoretical lectures and hands-on exercises, participants will learn how to instrument a simulation code with PDI, configure it declaratively via YAML, and drive complex I/O and visualization workflows without modifying the simulation itself. Attendees will leave with a practical understanding of how to adopt PDI in their own projects to create modular data workflows suited for HPC.
 
-
-    #image: /images/hero.svg
+    image: /hpcasia_logo.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -164,23 +167,55 @@ params:
   # About
   about:
     enable: true
-    title: "About"
+    title: "People"
     #image: "/images/me.png"
     content: |-
-      TODO
+      # [Benoît Martin, PhD](https://benoit.martin.eco). CEA/MdlS
+      Benoît Martin is a Research Scientist at Maison de la Simulation, a research laboratory affiliated with CEA, CNRS, 
+      Université Paris-Saclay, and Université Versailles Saint-Quentin. He earned his PhD in distributed systems from 
+      Sorbonne Université in Paris, under the supervision of Marc Shapiro. His academic background includes a BSc and an 
+      Engineering degree from École Supérieure de Génie Informatique (ESGI) in 2012 and 2015, respectively, as well as 
+      an MSc from Université du Québec à Chicoutimi (UQAC) in 2015. Before pursuing his PhD, he worked as an engineer in 
+      high-performance computing and the fintech industry, and as a research engineer at Inria with the Aramis team. 
+      His current research focuses on in-situ analytics in high-performance computing, particularly addressing challenges 
+      related to distributed systems and programming models. His interests include Transactional Memory Models, 
+      Consistency Models for Shared Memory, Conflict-Free Replicated Data Types (CRDTs), and the Actor Model.
 
-    skills:
-      enable: false
-      title: "Here are a few technologies I've been working with recently:"
-      items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
-        - "React"
-        - "Node"
-        - "Express"
+      # Jacques Morice, PhD. CEA/MdlS
+      Research engineer at Maison de la Simulation, a collaborative laboratory involving CEA, CNRS, Université Paris-Saclay, 
+      and Université Versailles Saint-Quentin. He joined the PDI team in October 2024 in the goal of developing software to 
+      bridge between physical simulation, data analysis, and IA in the context of high-performance computing. 
+      Jacques obtained a PhD in applied mathematics and scientific computing from the University of Bordeaux I. 
+      Before joining the PDI team, he worked on software development for physical applications (for example FreeFEM).
+      
+      # Julian Auriac. CEA/MdlS
+      Research engineer in computer science, HPC & AI, currently working at the Maison de la Simulation (MdlS), 
+      a french collaborative laboratory involving CEA, CNRS, and UVSQ. He is the latest addition to the PDI team, 
+      where his work focuses on PDI core and the DEISA plugin through the lenses of high-performance computing 
+      and parallel software engineering. After his engineering school, Julian specialized in HPC & AI through a 
+      specialized master's course.
+
+      # Yushan Wang, PhD. CEA/MdlS
+      Yushan Wang has been a permanent research engineer at Maison de la Simulation, CEA Saclay, since 2021. 
+      She earned her Ph.D. in Computer Science in 2015, specializing in optimization of computational fluid dynamics (CFD) 
+      simulations for heterogeneous computing environments. Before joining Maison de la Simulation, she worked as an engineer 
+      at the Laboratory for Climate and Environmental Sciences (LSCE) from 2016, where she played a key role in developing 
+      an I/O library for climate models, optimizing their computational resource usage for I/O. Soon after joining 
+      Maison de la Simulation, she began contributing to the PDI library, a tool that decouples I/O concerns from 
+      numerical simulations. Her research interests include high-performance computing (HPC) I/O workflows, particularly 
+      in-situ and in-transit data analysis and in-situ data visualization.
+
+#    skills:
+#      enable: false
+#      title: "Here are a few technologies I've been working with recently:"
+#      items:
+#        - "HTML"
+#        - "CSS"
+#        - "JavaScript"
+#        - "React"
+#        - "Node"
+#        - "Express"
   
-
 #  # Experience
 #  experience:
 #    enable: true
@@ -376,19 +411,19 @@ params:
 #          - icon: fab fa-github
 #            url: https://github.com/gurusabarish/HugoProfileV2
 
-  #Contact
+  # Contact
   contact:
     enable: true
     title: "Contact"
-    content: TODO
-    #btnName: Mail me
-    #btnLink: mailto:gurusabarisha@gmail.com
-    # formspree:
-    #   enable: true # `contact.email` value will be ignored
-    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
-    #   emailCaption: "Enter your email address"
-    #   messageCaption: "Enter your message here"
-    #   messageRows: 5
+    content: Feel free to reach out !
+    btnName: Slack
+    btnLink: https://join.slack.pdi.dev/
+    #formspree:
+    #  enable: true # `contact.email` value will be ignored
+    #  formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #  emailCaption: "Enter your email address"
+    #  messageCaption: "Enter your message here"
+    #  messageRows: 5
 
   footer:
     recentPosts:
@@ -410,7 +445,7 @@ params:
 
   # Single pages like blog and post
   singlePages:
-    socialShare: true
+    socialShare: false
     readTime:
       enable: true
       content: "min read"
