@@ -36,6 +36,11 @@ Menus:
       title: Program
       url: /program
       weight: 1
+    - identifier: material
+      name: Material
+      title: Material
+      url: /material
+      weight: 2
 #    - identifier: gallery
 #      name: Gallery
 #      title: Blog posts
@@ -93,23 +98,23 @@ params:
 
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
-  # color:
-  #   textColor: "#343a40"
-  #   secondaryTextColor: "#6c757d"
-  #   textLinkColor: "#007bff"
-  #   backgroundColor: "#eaedf0"
-  #   secondaryBackgroundColor: "#64ffda1a"
-  #   primaryColor: "#007bff"
-  #   secondaryColor: "#f8f9fa"
+  color:
+    textColor: "#343a40"
+    secondaryTextColor: "#6c757d"
+    textLinkColor: "#007bff"
+    backgroundColor: "#eaedf0"
+    secondaryBackgroundColor: "#64ffda1a"
+    primaryColor: "#27659e" # "#007bff"
+    secondaryColor: "#f8f9fa"
 
-  #   darkmode:
-  #     textColor: "#e4e6eb"
-  #     secondaryTextColor: "#b0b3b8"
-  #     textLinkColor: "#ffffff"
-  #     backgroundColor: "#18191a"
-  #     secondaryBackgroundColor: "#212529"
-  #     primaryColor: "#ffffff"
-  #     secondaryColor: "#212529"
+    darkmode:
+      textColor: "#e4e6eb"
+      secondaryTextColor: "#b0b3b8"
+      textLinkColor: "#007bff" # "#ffffff"
+      backgroundColor: "#18191a"
+      secondaryBackgroundColor: "#212529"
+      primaryColor: "#27659e" # "#007bff" # "#ffffff"
+      secondaryColor: "#212529"
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -147,6 +152,15 @@ params:
     image: /hpcasia_logo.png
     bottomImage:
       enable: true
+    # image: /hpcasia_logo.png
+    # bottomImage:
+    #   enable: true
+    #   src: /France_2030_logo.png
+    #   alt: France 2030
+    # bottomImage:
+    #   enable: true
+    #   src: /France_2030_logo.png
+    #   alt: Another Logo
     # roundImage: true # Make hero image circular | default false
     #button:
     #  enable: true
@@ -418,6 +432,9 @@ params:
     content: Feel free to reach out !
     btnName: Slack
     btnLink: https://join.slack.pdi.dev/
+    imageLink: "https://join.slack.pdi.dev/"
+    imageSrc: "/Slack_logo.png"
+    qrSrc: "/Slack_QR_code.png"
     #formspree:
     #  enable: true # `contact.email` value will be ignored
     #  formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -448,7 +465,7 @@ params:
     socialShare: false
     readTime:
       enable: true
-      content: "min read"
+      # content: "min read"
     scrollprogress:
       enable: true
     tags:

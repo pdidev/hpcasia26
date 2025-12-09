@@ -26,9 +26,9 @@
               {{ .Date.Format (.Site.Params.datesFormat.article | default "Jan 2, 2006") }}
 
               {{ if or (.Site.Params.singlePages.readTime.enable | default true) (.Params.enableReadingTime) }}
-              <span id="readingTime">
+              <!-- <span id="readingTime">
                 {{ .Site.Params.singlePages.readTime.content | default "min read" }}
-              </span>
+              </span> -->
               {{ end }}
             </div>
           </div>
@@ -42,7 +42,7 @@
           </article>
         </div>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-3">
+      <!-- <div class="col-sm-12 col-md-12 col-lg-3">
         <div id="stickySideBar" class="sticky-sidebar">
           {{ if .Params.toc | default false}}
           <aside class="toc">
@@ -98,7 +98,7 @@
           </aside>
           {{ end }}
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-9 p-4">
