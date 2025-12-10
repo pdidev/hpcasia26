@@ -168,7 +168,8 @@ params:
   about:
     enable: true
     title: "People"
-    image: "mdls_logo.png"
+    image: "cea-logo.png"
+    image2: "mdls_logo.png"
     content: |-
       # [Benoît Martin, PhD](https://benoit.martin.eco). CEA/MdlS
       Benoît Martin is a Research Scientist at Maison de la Simulation, a research laboratory affiliated with CEA, CNRS, 
