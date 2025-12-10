@@ -15,9 +15,9 @@ outputs:
 
 enableRobotsTXT: true
 
-#services:
-  #googleAnalytics:
-    #id: G-MEASUREMENT_ID
+services:
+  googleAnalytics:
+    id: G-462LVLWRQX 
   #disqus:
     #shortname: your-disqus-shortname
 
@@ -121,7 +121,7 @@ params:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "PDI" # Brand name for the brand | default is the title variable
+    brandName: "PDI Data Interface" # Brand name for the brand | default is the title variable
     disableSearch: true
     # searchPlaceholder: "Search"
     stickyNavBar:
@@ -182,7 +182,8 @@ params:
   about:
     enable: true
     title: "People"
-    image: "mdls_logo.png"
+    image: "cea-logo.png"
+    image2: "mdls_logo.png"
     content: |-
       # [Benoît Martin, PhD](https://benoit.martin.eco). CEA/MdlS
       Benoît Martin is a Research Scientist at Maison de la Simulation, a research laboratory affiliated with CEA, CNRS, 
