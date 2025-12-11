@@ -8,7 +8,17 @@ description: ""
 toc: 
 ---
 
-Duration: full-day
+<!-- Date: January 26, 2026 <br> Duration: Full-day <br> Room: TBD -->
+<dl class="event-info">
+  <dt>Date:</dt>
+  <dd>&nbsp;&nbsp;&nbsp;&nbsp;January 26, 2026</dd>
+
+  <dt>Duration:</dt>
+  <dd>&nbsp;&nbsp;&nbsp;&nbsp;Full-day</dd>
+
+  <dt>Room:</dt>
+  <dd>&nbsp;&nbsp;&nbsp;&nbsp;TBD</dd>
+</dl>
 
 | Time | Topic |
 |------|-------|
