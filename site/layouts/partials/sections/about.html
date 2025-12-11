@@ -8,12 +8,6 @@
                 <div class="image d-flex px-5">
                     <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto" style="border-radius: 1rem; padding: 0.9rem !important;" alt="">
                 </div>
-                <!-- <div style="height: 15px;"></div> -->
-                <!-- {{ if .Site.Params.about.image2 }}
-                <div class="image d-flex px-5">
-                    <img src="{{ .Site.Params.about.image2 }}" class="img-thumbnail mx-auto " alt="">
-                </div>
-                {{ end }} -->
                 {{ with .Site.Params.about.extraImages }}
                 <div class="extra-images d-flex px-5 mt-3">
                     {{ range . }}
@@ -28,7 +22,6 @@
             {{ end }}
             <div class="col-sm-12 col-md-12 col-lg-8 content" style="text-align: justify;">
                 {{ .Site.Params.about.content | markdownify }}
-
                 {{ if .Site.Params.about.skills.enable }}
                 {{ .Site.Params.about.skills.title }}
                 <ul>
