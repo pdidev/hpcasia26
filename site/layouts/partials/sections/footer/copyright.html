@@ -3,7 +3,7 @@
         <div class="col-md-4 text-center">
             {{ if or .Site.Params.navbar.brandLogo .Site.Params.favicon }}
                 <div class="pb-2">
-                    <a href="{{ replaceRE "/[^/]+/?$" "/" .Site.BaseURL }}" title="{{ .Site.Title }}">
+                    <a href="{{ .Site.Params.MainURL }}" title="{{ .Site.Title }}">
                         <img alt="Footer logo" src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}"
                             height="40px" width="40px">
                     </a>

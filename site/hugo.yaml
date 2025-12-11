@@ -65,6 +65,7 @@ Menus:
     #   weight: 2
 
 params:
+  mainURL: "https://pdi.dev/main/"
   title: "PDI tutorial @SCA/HPCAsia 2026"
   description: "Decoupling I/O in HPC Codes with PDI: From File-based I/O to In-Situ Data Analytics"
   # staticPath: ""  # The path to serve the static files from
@@ -146,10 +147,17 @@ params:
       As HPC simulations scale toward exascale, I/O becomes a critical bottleneck due to the growing disparity between compute 
       performance and storage bandwidth. Traditional post-hoc output models struggle with the volume and velocity of generated data. 
       The Parallel Data Interface (PDI) offers a lightweight and flexible solution by decoupling I/O, filtering, and analysis 
-      logic from the simulation code. 
-      Tutorial takebacks
-      Through a declarative configuration system and a plugin-based architecture, PDI enables 
-      simulation developers to expose data buffers and trigger events without embedding I/O decisions directly into their application. PDI offers a simple API in C/C++, Fortran, and Python. This full-day tutorial introduces PDI and its ecosystem of plugins: sequential and parallel HDF5 for file output, user-code and pycall for in-process custom logic execution, DEISA for in-situ analytics, and Catalyst for live ParaView-based visualization. Through a combination of theoretical lectures and hands-on exercises, participants will learn how to instrument a simulation code with PDI, configure it declaratively via YAML, and drive complex I/O and visualization workflows without modifying the simulation itself. Attendees will leave with a practical understanding of how to adopt PDI in their own projects to create modular data workflows suited for HPC.
+      logic from the simulation code. Through a declarative configuration system and a plugin-based architecture, PDI enables 
+      simulation developers to expose data buffers and trigger events without embedding I/O decisions directly into their application. 
+      PDI offers a simple API in C/C++, Fortran, and Python. This full-day tutorial introduces PDI and its ecosystem of plugins: 
+      sequential and parallel HDF5 for file output, user-code and pycall for in-process custom logic execution, DEISA for 
+      in-situ analytics, and Catalyst for live ParaView-based visualization. 
+      <br>
+      <b style="font-size: 1.5rem;">Tutorial Takeaways -</b>
+      Through a combination of theoretical lectures and hands-on exercises, participants will learn how to instrument a 
+      simulation code with PDI, configure it declaratively via YAML, and drive complex I/O and visualization workflows without 
+      modifying the simulation itself. Attendees will leave with a practical understanding of how to adopt PDI in their own projects 
+      to create modular data workflows suited for HPC.
 
     image: /hpcasia_logo.png
     extraImages:
@@ -165,7 +173,7 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://pdi.dev
+          url: https://github.com/pdidev/pdi
         #- icon: fab fa-x-twitter
         #  url: https://example.com
       #customIcons:
@@ -189,7 +197,7 @@ params:
       - /cea_logo.jpg
       - /cnrs_logo.jpg
     content: |-
-      # [Benoît Martin, PhD](https://benoit.martin.eco). CEA/MdlS
+      # Benoît Martin, PhD. CEA/MdlS
       Benoît Martin is a Research Scientist at Maison de la Simulation, a research laboratory affiliated with CEA, CNRS, 
       Université Paris-Saclay, and Université Versailles Saint-Quentin. He earned his PhD in distributed systems from 
       Sorbonne Université in Paris, under the supervision of Marc Shapiro. His academic background includes a BSc and an 
