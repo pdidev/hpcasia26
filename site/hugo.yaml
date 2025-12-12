@@ -31,16 +31,36 @@ markup:
 
 Menus:
   main:
+    - identifier: home
+      name: Home
+      title: Home
+      url: /
+      weight: 1
+
+    - identifier: people
+      name: People
+      title: People
+      url: /#about
+      weight: 2
+
+    - identifier: contact
+      name: Contact
+      title: Contact
+      url: /#contact
+      weight: 3
+
     - identifier: program
       name: Program
       title: Program
       url: /program
-      weight: 1
+      weight: 4
+
     - identifier: material
       name: Material
       title: Material
       url: /material
-      weight: 2
+      weight: 5
+
 #    - identifier: gallery
 #      name: Gallery
 #      title: Blog posts
@@ -130,12 +150,12 @@ params:
       showOnScrollUp : true
     enableSeparator: false
     menus:
-      disableAbout: false
+      disableAbout: true
       disableExperience: true
       disableEducation: true
       disableProjects: true
       disableAchievements: true
-      disableContact: false
+      disableContact: true
 
   # Hero
   hero:
@@ -183,11 +203,11 @@ params:
   about:
     enable: true
     title: "People"
-    image: "mdls_logo.png"
+    image: "mdls_alpha-compressed_lower_resolution.png"
     extraImages:
       - /cea_logo.jpg
     content: |-
-      # [Benoît Martin, PhD](https://benoit.martin.eco). CEA/MdlS
+      # [Benoît MARTIN, PhD](https://benoit.martin.eco). CEA/MdlS
       Benoît Martin is a Research Scientist at Maison de la Simulation, a research laboratory affiliated with CEA, CNRS, 
       Université Paris-Saclay, and Université Versailles Saint-Quentin. He earned his PhD in distributed systems from 
       Sorbonne Université in Paris, under the supervision of Marc Shapiro. His academic background includes a BSc and an 
@@ -198,21 +218,33 @@ params:
       related to distributed systems and programming models. His interests include Transactional Memory Models, 
       Consistency Models for Shared Memory, Conflict-Free Replicated Data Types (CRDTs), and the Actor Model.
 
-      # Jacques Morice, PhD. CEA/MdlS
+      # Jacques MORICE, PhD. CEA/MdlS
       Research engineer at Maison de la Simulation, a collaborative laboratory involving CEA, CNRS, Université Paris-Saclay, 
       and Université Versailles Saint-Quentin. He joined the PDI team in October 2024 in the goal of developing software to 
       bridge between physical simulation, data analysis, and IA in the context of high-performance computing. 
       Jacques obtained a PhD in applied mathematics and scientific computing from the University of Bordeaux I. 
       Before joining the PDI team, he worked on software development for physical applications (for example FreeFEM).
       
-      # Julian Auriac. CEA/MdlS
+      # Julian AURIAC. CEA/MdlS
       Research engineer in computer science, HPC & AI, currently working at the Maison de la Simulation (MdlS), 
       a french collaborative laboratory involving CEA, CNRS, and UVSQ. He is the latest addition to the PDI team, 
       where his work focuses on PDI core and the DEISA plugin through the lenses of high-performance computing 
       and parallel software engineering. After his engineering school, Julian specialized in HPC & AI through a 
       specialized master's course.
 
-      # Yushan Wang, PhD. CEA/MdlS
+      # [Julien BIGOT, PhD](https://work.julien-bigot.fr). CEA/MdlS
+      I am a permanent CEA computer scientist at Maison de la Simulation where I lead the Science of Computing team. 
+      My research focuses on programming models for high-performance computing. I am especially interested in the 
+      question of separation of concerns between the simulated domain specific aspects and optimization aspects.
+      I try to concretize my research into production-level software like the DDC, Deisa, or PDI libraries 
+      whose development I started, or Kokkos, a project of the Linux Foundation originating from the US DoE. 
+      I also try to apply these libraries in production into real codes like the Gysela code for example.
+      I lead the CExA project that contributes to the Kokkos ecosystem, and in NumPEx, that intends to build the 
+      software stack for the French Exascale machines, I co-lead the Exa-DoST about IO and data analysis libraries and tools, 
+      in the Exa-DI project, I co-lead the work on software packaging, deployment, and CI/CD, and in the Exa-Soft project, 
+      I take part in the work GPU programming models.
+
+      # Yushan WANG, PhD. CEA/MdlS
       Yushan Wang has been a permanent research engineer at Maison de la Simulation, CEA Saclay, since 2021. 
       She earned her Ph.D. in Computer Science in 2015, specializing in optimization of computational fluid dynamics (CFD) 
       simulations for heterogeneous computing environments. Before joining Maison de la Simulation, she worked as an engineer 
