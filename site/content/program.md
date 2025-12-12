@@ -8,7 +8,15 @@ description: ""
 toc: 
 ---
 
-Duration: full-day
+Date:
+: January 26, 2026
+
+Duration:
+: Full-day
+
+Room:
+: TBD
+
 
 | Time | Topic |
 |------|-------|

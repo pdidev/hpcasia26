@@ -36,6 +36,11 @@ Menus:
       title: Program
       url: /program
       weight: 1
+    - identifier: material
+      name: Material
+      title: Material
+      url: /material
+      weight: 2
 #    - identifier: gallery
 #      name: Gallery
 #      title: Blog posts
@@ -60,8 +65,9 @@ Menus:
     #   weight: 2
 
 params:
+  mainURL: "https://pdi.dev/main/"
   title: "PDI tutorial @SCA/HPCAsia 2026"
-  description: "Decoupling I/O in HPC Codes with PDI: From File-based I/O to In Situ Data Analytics"
+  description: "Decoupling I/O in HPC Codes with PDI: From File-based I/O to In-Situ Data Analytics"
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -93,23 +99,23 @@ params:
 
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
-  # color:
-  #   textColor: "#343a40"
-  #   secondaryTextColor: "#6c757d"
-  #   textLinkColor: "#007bff"
-  #   backgroundColor: "#eaedf0"
-  #   secondaryBackgroundColor: "#64ffda1a"
-  #   primaryColor: "#007bff"
-  #   secondaryColor: "#f8f9fa"
+  color:
+    textColor: "#343a40"
+    secondaryTextColor: "#6c757d"
+    textLinkColor: "#007bff"
+    backgroundColor: "#eaedf0"
+    secondaryBackgroundColor: "#64ffda1a"
+    primaryColor: "#27659e" # "#007bff"
+    secondaryColor: "#f8f9fa"
 
-  #   darkmode:
-  #     textColor: "#e4e6eb"
-  #     secondaryTextColor: "#b0b3b8"
-  #     textLinkColor: "#ffffff"
-  #     backgroundColor: "#18191a"
-  #     secondaryBackgroundColor: "#212529"
-  #     primaryColor: "#ffffff"
-  #     secondaryColor: "#212529"
+    darkmode:
+      textColor: "#e4e6eb"
+      secondaryTextColor: "#b0b3b8"
+      textLinkColor: "#007bff" # "#ffffff"
+      backgroundColor: "#18191a"
+      secondaryBackgroundColor: "#212529"
+      primaryColor: "#27659e" # "#007bff" # "#ffffff"
+      secondaryColor: "#212529"
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -136,17 +142,26 @@ params:
     enable: true
     intro: ""
     title: "PDI tutorial @SCA/HPCAsia 2026"
-    subtitle: "Decoupling I/O in HPC Codes with PDI: From File-based I/O to In Situ Data Analytics"
+    subtitle: "Decoupling I/O in HPC Codes with PDI: From File-based I/O to In-Situ Data Analytics"
     content: |-
       As HPC simulations scale toward exascale, I/O becomes a critical bottleneck due to the growing disparity between compute 
       performance and storage bandwidth. Traditional post-hoc output models struggle with the volume and velocity of generated data. 
       The Parallel Data Interface (PDI) offers a lightweight and flexible solution by decoupling I/O, filtering, and analysis 
       logic from the simulation code. Through a declarative configuration system and a plugin-based architecture, PDI enables 
-      simulation developers to expose data buffers and trigger events without embedding I/O decisions directly into their application. PDI offers a simple API in C/C++, Fortran, and Python. This full-day tutorial introduces PDI and its ecosystem of plugins: sequential and parallel HDF5 for file output, user-code and pycall for in-process custom logic execution, DEISA for in situ analytics, and Catalyst for live ParaView-based visualization. Through a combination of theoretical lectures and hands-on exercises, participants will learn how to instrument a simulation code with PDI, configure it declaratively via YAML, and drive complex I/O and visualization workflows without modifying the simulation itself. Attendees will leave with a practical understanding of how to adopt PDI in their own projects to create modular data workflows suited for HPC.
+      simulation developers to expose data buffers and trigger events without embedding I/O decisions directly into their application. 
+      PDI offers a simple API in C/C++, Fortran, and Python. This full-day tutorial introduces PDI and its ecosystem of plugins: 
+      sequential and parallel HDF5 for file output, user-code and pycall for in-process custom logic execution, DEISA for 
+      in-situ analytics, and Catalyst for live ParaView-based visualization. 
+      <br>Tutorial takeaways:</br>
+      Through a combination of theoretical lectures and hands-on exercises, participants will learn how to instrument a 
+      simulation code with PDI, configure it declaratively via YAML, and drive complex I/O and visualization workflows without 
+      modifying the simulation itself. Attendees will leave with a practical understanding of how to adopt PDI in their own projects 
+      to create modular data workflows suited for HPC.
 
     image: /hpcasia_logo.png
-    bottomImage:
-      enable: true
+    extraImages:
+      - /France_2030_logo_white.png
+
     # roundImage: true # Make hero image circular | default false
     #button:
     #  enable: true
@@ -155,11 +170,11 @@ params:
     #  download: true
     #  newPage: false
     socialLinks:
-      fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://pdi.dev
-        #- icon: fab fa-x-twitter
-        #  url: https://example.com
+      # fontAwesomeIcons:
+      #   - icon: fab fa-github
+      #     url: https://github.com/pdidev/pdi
+      #   - icon: fab fa-x-twitter
+      #     url: https://example.com
       #customIcons:
       #  - icon: /fav.png
       #    url: "https://example.com"
@@ -168,8 +183,9 @@ params:
   about:
     enable: true
     title: "People"
-    image: "cea-logo.png"
-    image2: "mdls_logo.png"
+    image: "mdls_logo.png"
+    extraImages:
+      - /cea_logo.jpg
     content: |-
       # [Benoît Martin, PhD](https://benoit.martin.eco). CEA/MdlS
       Benoît Martin is a Research Scientist at Maison de la Simulation, a research laboratory affiliated with CEA, CNRS, 
@@ -412,13 +428,26 @@ params:
 #          - icon: fab fa-github
 #            url: https://github.com/gurusabarish/HugoProfileV2
 
+  # Acknowledgements
+  acknowledgements:
+    enable: true
+    title: "Acknowledgements"
+    content: |-
+      As part of the "France 2030" initiative, this work has benefited from a State grant managed by the 
+      French National Research Agency (Agence Nationale de la Recherche) attributed to the Exa-DoST project 
+      of the NumPEx PEPR program, reference: ANR-22-EXNU-0004.
+
   # Contact
   contact:
     enable: true
     title: "Contact"
-    content: Feel free to reach out !
+    content: |-
+      Feel free to reach out !
     btnName: Slack
     btnLink: https://join.slack.pdi.dev/
+    imageLink: "https://join.slack.pdi.dev/"
+    imageSrc: "/Slack_logo.png"
+    qrSrc: "/Slack_QR_code.png"
     #formspree:
     #  enable: true # `contact.email` value will be ignored
     #  formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -449,7 +478,7 @@ params:
     socialShare: false
     readTime:
       enable: true
-      content: "min read"
+      # content: "min read"
     scrollprogress:
       enable: true
     tags:
