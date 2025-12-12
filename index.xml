@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PDI tutorial</title><link>https://pdi.dev/hpcasia26/</link><description>Recent content on PDI tutorial</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 08 Nov 2025 13:20:33 +0100</lastBuildDate><atom:link href="https://pdi.dev/hpcasia26/index.xml" rel="self" type="application/rss+xml"/><item><title>Program</title><link>https://pdi.dev/hpcasia26/program/</link><pubDate>Sat, 08 Nov 2025 13:20:33 +0100</pubDate><guid>https://pdi.dev/hpcasia26/program/</guid><description>&lt;p&gt;Duration: full-day&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PDI tutorial</title><link>https://pdi.dev/hpcasia26/</link><description>Recent content on PDI tutorial</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 08 Nov 2025 13:20:33 +0100</lastBuildDate><atom:link href="https://pdi.dev/hpcasia26/index.xml" rel="self" type="application/rss+xml"/><item><title>Material</title><link>https://pdi.dev/hpcasia26/material/</link><pubDate>Sat, 08 Nov 2025 13:20:33 +0100</pubDate><guid>https://pdi.dev/hpcasia26/material/</guid><description>&lt;p&gt;⚠️ Take notice: This tutorial requires a working container environment using &lt;a href="https://docs.docker.com/engine/install/"&gt;Docker&lt;/a&gt; or &lt;a href="https://podman.io/docs/installation"&gt;Podman&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id="container-environment"&gt;Container environment&lt;/h4&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;docker run -it ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;From within the container environment, you may test that your setup is working using the dedicated script:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;./environment_check_script
+[...]
+[0] SUCCESS 
+[1] SUCCESS
+[2] SUCCESS
+[3] SUCCESS
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Program</title><link>https://pdi.dev/hpcasia26/program/</link><pubDate>Sat, 08 Nov 2025 13:20:33 +0100</pubDate><guid>https://pdi.dev/hpcasia26/program/</guid><description>&lt;dl&gt;
+&lt;dt&gt;Date:&lt;/dt&gt;
+&lt;dd&gt;January 26, 2026&lt;/dd&gt;
+&lt;dt&gt;Duration:&lt;/dt&gt;
+&lt;dd&gt;Full-day&lt;/dd&gt;
+&lt;dt&gt;Room:&lt;/dt&gt;
+&lt;dd&gt;TBD&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
