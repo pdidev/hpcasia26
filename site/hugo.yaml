@@ -221,30 +221,30 @@ params:
       Consistency Models for Shared Memory, Conflict-Free Replicated Data Types (CRDTs), and the Actor Model.
 
       # Jacques MORICE, PhD. CEA/MdlS
-      Research engineer at Maison de la Simulation, a collaborative laboratory involving CEA, CNRS, Université Paris-Saclay, 
+      Jacques MORICE is a Research Engineer at Maison de la Simulation, a collaborative laboratory involving CEA, CNRS, Université Paris-Saclay, 
       and Université Versailles Saint-Quentin. He joined the PDI team in October 2024 in the goal of developing software to 
       bridge between physical simulation, data analysis, and IA in the context of high-performance computing. 
       Jacques obtained a PhD in applied mathematics and scientific computing from the University of Bordeaux I. 
       Before joining the PDI team, he worked on software development for physical applications (for example FreeFEM).
       
       # Julian AURIAC. CEA/MdlS
-      Research engineer in computer science, HPC & AI, currently working at the Maison de la Simulation (MdlS), 
+      Julian AURIAC is Research Engineer in computer science, HPC & AI, currently working at the Maison de la Simulation (MdlS), 
       a french collaborative laboratory involving CEA, CNRS, and UVSQ. He is the latest addition to the PDI team, 
       where his work focuses on PDI core and the DEISA plugin through the lenses of high-performance computing 
       and parallel software engineering. After his engineering school, Julian specialized in HPC & AI through a 
       specialized master's course.
 
       # [Julien BIGOT, PhD](https://work.julien-bigot.fr). CEA/MdlS
-      I am a permanent CEA computer scientist at Maison de la Simulation where I lead the Science of Computing team. 
-      My research focuses on programming models for high-performance computing. I am especially interested in the 
+      Julien BIGOT is a permanent CEA computer scientist at Maison de la Simulation where he leads the Science of Computing team. 
+      His research focuses on programming models for high-performance computing. He is especially interested in the 
       question of separation of concerns between the simulated domain specific aspects and optimization aspects.
-      I try to concretize my research into production-level software like the DDC, Deisa, or PDI libraries 
-      whose development I started, or Kokkos, a project of the Linux Foundation originating from the US DoE. 
-      I also try to apply these libraries in production into real codes like the Gysela code for example.
-      I lead the CExA project that contributes to the Kokkos ecosystem, and in NumPEx, that intends to build the 
-      software stack for the French Exascale machines, I co-lead the Exa-DoST about IO and data analysis libraries and tools, 
-      in the Exa-DI project, I co-lead the work on software packaging, deployment, and CI/CD, and in the Exa-Soft project, 
-      I take part in the work GPU programming models.
+      He aims to concretize his research into production-level software like the DDC, Deisa, or PDI libraries 
+      whose development he started himself, or Kokkos, a project of the Linux Foundation originating from the US DoE. 
+      He also aims to apply these libraries in production into real codes like the Gysela code for example.
+      He leads the CExA project that contributes to the Kokkos ecosystem, and in NumPEx, that intends to build the 
+      software stack for the French Exascale machines. He co-leads the Exa-DoST work on I/O and data analysis libraries and tools.
+      In the Exa-DI project, he co-leads the work on software packaging, deployment, and CI/CD, and in the Exa-Soft project,
+      he takes part in the work on GPU programming models.
 
       # [Yushan WANG, PhD](https://fr.linkedin.com/in/yushan-wang-cea). CEA/MdlS
       Yushan Wang has been a permanent research engineer at Maison de la Simulation, CEA Saclay, since 2021. 
