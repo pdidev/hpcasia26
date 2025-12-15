@@ -1,0 +1,6 @@
+#about .image img.img-thumbnail-square-uncropped {
+	width: 100%;
+    padding: 0.9rem;
+    border-radius: 0;
+}
+
