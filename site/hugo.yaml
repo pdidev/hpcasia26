@@ -179,6 +179,7 @@ params:
       to create modular data workflows suited for HPC.
 
     image: /hpcasia_logo.png
+    imageLink: "https://www.sca-hpcasia2026.jp/"
     extraImages:
       - /France_2030_logo_white.png
 
@@ -204,6 +205,7 @@ params:
     enable: true
     title: "People"
     image: "mdls_alpha-compressed_lower_resolution.png"
+    imageLink: "https://mdls.fr/"
     extraImages:
       - /cea_logo.jpg
     content: |-
