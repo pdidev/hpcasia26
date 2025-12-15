@@ -1,11 +1,9 @@
-{{ $u := urls.Parse .Destination }}
-
-{{ if $u.IsAbs }}
-<a href="{{ .Destination }}" target="_blank" rel="noopener noreferrer">
-  {{ .Text | safeHTML }}
-</a>
+{{ if or (strings.HasPrefix .Destination "http://") (strings.HasPrefix .Destination "https://") }}
+  <a href="{{ .Destination }}" target="_blank" rel="noopener noreferrer">
+    {{ .Text | safeHTML }}
+  </a>
 {{ else }}
-<a href="{{ .Destination }}">
-  {{ .Text | safeHTML }}
-</a>
+  <a href="{{ .Destination }}">
+    {{ .Text | safeHTML }}
+  </a>
 {{ end }}

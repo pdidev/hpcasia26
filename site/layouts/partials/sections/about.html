@@ -20,8 +20,7 @@
                         {{ $link := index $links $i }}
                         <a href="{{ $link }}" target="_blank" rel="noopener noreferrer">
                             <img src="{{ $img | relURL }}"
-                                class="img-thumbnail mx-auto mt-3"
-                                style="background: transparent !important; border: none !important;"
+                                class="img-thumbnail-square-uncropped mx-auto mt-3"
                                 alt="">
                         </a>
                     {{ end }}

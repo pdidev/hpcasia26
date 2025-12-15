@@ -2,5 +2,30 @@
 	width: 100%;
     padding: 0.9rem;
     border-radius: 0;
+	box-shadow: none;
+	background-color: #fff;
+}
+
+#about .extra-images img.img-thumbnail-square-uncropped {
+	width: 100%;
+    padding: 0;
+    border-radius: 0;
+	box-shadow: none;
+}
+
+#hero .image img.img-thumbnail-round-uncropped,
+#hero .extra-images img.img-thumbnail-round-uncropped {
+	width: 100%;
+    padding: 0.9rem;
+    border-radius: 1.0rem;
+	border: 0;
+	background-color: #18191a;
+}
+
+#single .featured-image img.img-thumbnail-round-uncropped {
+    padding: 0.9rem;
+    border-radius: 1.0rem;
+	border: 0;
+	background-color: #18191a;
 }
 
