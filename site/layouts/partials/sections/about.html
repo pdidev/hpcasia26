@@ -12,13 +12,18 @@
                         <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto" style="border-radius: 0rem; padding: 0.9rem !important;" alt="">
                     </a>
                 </div>
-                {{ with .Site.Params.about.extraImages }}
+                {{ $images := .Site.Params.about.extraImages }}
+                {{ $links := .Site.Params.about.extraLinks }}
+                {{ if $images }}
                 <div class="extra-images d-flex px-5 mt-3">
-                    {{ range . }}
-                        <img src="{{ . | relURL }}"
-                            class="img-thumbnail mx-auto mt-3"
-                            style="background: transparent !important; border: none !important;"
-                            alt="">
+                    {{ range $i, $img := $images }}
+                        {{ $link := index $links $i }}
+                        <a href="{{ $link }}" target="_blank" rel="noopener noreferrer">
+                            <img src="{{ $img | relURL }}"
+                                class="img-thumbnail mx-auto mt-3"
+                                style="background: transparent !important; border: none !important;"
+                                alt="">
+                        </a>
                     {{ end }}
                 </div>
                 {{ end }}
