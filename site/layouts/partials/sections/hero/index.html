@@ -35,16 +35,19 @@
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-9 pt-5 px-5 px-md-5 px-lg-0 text-center">
                         <div class="image {{ if .Site.Params.animate }}animate{{ end }}">
+                            <a href="{{ .Site.Params.hero.imageLink }}"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             <img src="{{ .Site.Params.hero.image }}"
-                                class="img-thumbnail mx-auto{{ if .Site.Params.hero.roundImage }} rounded-circle{{ end }}"
+                                class="img-thumbnail-round-uncropped mx-auto{{ if .Site.Params.hero.roundImage }} rounded-circle{{ end }}"
                                 alt="">
+                            </a>
                         </div>
                         {{ with .Site.Params.hero.extraImages }}
                         <div class="extra-images mt-3">
                             {{ range . }}
                                 <img src="{{ . | relURL }}"
-                                    class="img-thumbnail mx-auto mt-3"
-                                    style="background-color: #18191a !important; border-radius: 1rem; border: none !important;"
+                                    class="img-thumbnail-round-uncropped mx-auto mt-3"
                                     alt="Additional hero image">
                             {{ end }}
                         </div>

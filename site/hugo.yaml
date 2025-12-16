@@ -41,6 +41,7 @@ Menus:
       title: Material
       url: /material
       weight: 2
+
 #    - identifier: gallery
 #      name: Gallery
 #      title: Blog posts
@@ -70,6 +71,7 @@ params:
   description: "Decoupling I/O in HPC Codes with PDI: From File-based I/O to In-Situ Data Analytics"
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
+  customCSS: true
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -122,12 +124,12 @@ params:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "PDI Data Interface" # Brand name for the brand | default is the title variable
+    brandName: "Home" # Brand name for the brand | default is the title variable
     disableSearch: true
     # searchPlaceholder: "Search"
     stickyNavBar:
       enable : true
-      showOnScrollUp : true
+      showOnScrollUp : false
     enableSeparator: false
     menus:
       disableAbout: false
@@ -140,8 +142,8 @@ params:
   # Hero
   hero:
     enable: true
-    intro: ""
-    title: "PDI tutorial @SCA/HPCAsia 2026"
+    intro: SCA/HPCAsia 2026, Osaka, Japan 
+    title: Full-day PDI tutorial
     subtitle: "Decoupling I/O in HPC Codes with PDI: From File-based I/O to In-Situ Data Analytics"
     content: |-
       As HPC simulations scale toward exascale, I/O becomes a critical bottleneck due to the growing disparity between compute 
@@ -159,6 +161,7 @@ params:
       to create modular data workflows suited for HPC.
 
     image: /hpcasia_logo.png
+    imageLink: "https://www.sca-hpcasia2026.jp/"
     extraImages:
       - /France_2030_logo_white.png
 
@@ -182,10 +185,13 @@ params:
   # About
   about:
     enable: true
-    title: "People"
-    image: "mdls_logo.png"
+    title: "Team"
+    image: "mdls_alpha-compressed_lower_resolution.png"
+    imageLink: "https://mdls.fr/"
     extraImages:
       - /cea_logo.jpg
+    extraLinks:
+      - "https://www.cea.fr/"
     content: |-
       # [Benoît Martin, PhD](https://benoit.martin.eco). CEA/MdlS
       Benoît Martin is a Research Scientist at Maison de la Simulation, a research laboratory affiliated with CEA, CNRS, 
@@ -199,20 +205,32 @@ params:
       Consistency Models for Shared Memory, Conflict-Free Replicated Data Types (CRDTs), and the Actor Model.
 
       # Jacques Morice, PhD. CEA/MdlS
-      Research engineer at Maison de la Simulation, a collaborative laboratory involving CEA, CNRS, Université Paris-Saclay, 
+      Jacques Morice is a Research Engineer at Maison de la Simulation, a collaborative laboratory involving CEA, CNRS, Université Paris-Saclay, 
       and Université Versailles Saint-Quentin. He joined the PDI team in October 2024 in the goal of developing software to 
       bridge between physical simulation, data analysis, and IA in the context of high-performance computing. 
       Jacques obtained a PhD in applied mathematics and scientific computing from the University of Bordeaux I. 
       Before joining the PDI team, he worked on software development for physical applications (for example FreeFEM).
       
       # Julian Auriac. CEA/MdlS
-      Research engineer in computer science, HPC & AI, currently working at the Maison de la Simulation (MdlS), 
+      Julian Auriac is Research Engineer in computer science, HPC & AI, currently working at the Maison de la Simulation (MdlS), 
       a french collaborative laboratory involving CEA, CNRS, and UVSQ. He is the latest addition to the PDI team, 
       where his work focuses on PDI core and the DEISA plugin through the lenses of high-performance computing 
       and parallel software engineering. After his engineering school, Julian specialized in HPC & AI through a 
       specialized master's course.
 
-      # Yushan Wang, PhD. CEA/MdlS
+      # [Julien Bigot, PhD](https://work.julien-bigot.fr). CEA/MdlS
+      Julien Bigot is a permanent CEA computer scientist at Maison de la Simulation where he leads the Science of Computing team. 
+      His research focuses on programming models for high-performance computing. He is especially interested in the 
+      question of separation of concerns between the simulated domain specific aspects and optimization aspects.
+      He aims to concretize his research into production-level software like the DDC, Deisa, or PDI libraries 
+      whose development he started himself, or Kokkos, a project of the Linux Foundation originating from the US DoE. 
+      He also aims to apply these libraries in production into real codes like the Gysela code for example.
+      He leads the CExA project that contributes to the Kokkos ecosystem, and in NumPEx, that intends to build the 
+      software stack for the French Exascale machines. He co-leads the Exa-DoST work on I/O and data analysis libraries and tools.
+      In the Exa-DI project, he co-leads the work on software packaging, deployment, and CI/CD, and in the Exa-Soft project,
+      he takes part in the work on GPU programming models.
+
+      # [Yushan Wang, PhD](https://fr.linkedin.com/in/yushan-wang-cea). CEA/MdlS
       Yushan Wang has been a permanent research engineer at Maison de la Simulation, CEA Saclay, since 2021. 
       She earned her Ph.D. in Computer Science in 2015, specializing in optimization of computational fluid dynamics (CFD) 
       simulations for heterogeneous computing environments. Before joining Maison de la Simulation, she worked as an engineer 

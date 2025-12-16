@@ -34,7 +34,11 @@
           </div>
           {{ if .Params.image }}
           <div class="featured-image">
-            <img class="img-fluid mx-auto d-block" src="{{ .Params.image }}" alt="{{ .Title }}">
+            <a href="{{ .Site.Params.hero.imageLink }}"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img class="img-thumbnail-round-uncropped mx-auto d-block" src="{{ .Params.image }}" alt="{{ .Title }}">
+            </a>
           </div>
           {{ end }}
           <article class="page-content  p-2">
