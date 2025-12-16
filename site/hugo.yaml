@@ -71,6 +71,7 @@ params:
   description: "Decoupling I/O in HPC Codes with PDI: From File-based I/O to In-Situ Data Analytics"
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
+  customCSS: true
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -193,7 +194,7 @@ params:
       - "https://www.cea.fr/"
     content: |-
       # [Benoît Martin, PhD](https://benoit.martin.eco). CEA/MdlS
-      Benoît Martin is a Research Scientist at Maison developers la Simulation, a research laboratory affiliated with CEA, CNRS, 
+      Benoît Martin is a Research Scientist at Maison de la Simulation, a research laboratory affiliated with CEA, CNRS, 
       Université Paris-Saclay, and Université Versailles Saint-Quentin. He earned his PhD in distributed systems from 
       Sorbonne Université in Paris, under the supervision of Marc Shapiro. His academic background includes a BSc and an 
       Engineering degree from École Supérieure de Génie Informatique (ESGI) in 2012 and 2015, respectively, as well as 
