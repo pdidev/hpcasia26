@@ -31,35 +31,16 @@ markup:
 
 Menus:
   main:
-    - identifier: home
-      name: Home
-      title: Home
-      url: /
-      weight: 1
-
-    - identifier: people
-      name: People
-      title: People
-      url: /#about
-      weight: 2
-
-    - identifier: contact
-      name: Contact
-      title: Contact
-      url: /#contact
-      weight: 3
-
     - identifier: program
       name: Program
       title: Program
       url: /program
-      weight: 4
-
+      weight: 1
     - identifier: material
       name: Material
       title: Material
       url: /material
-      weight: 5
+      weight: 2
 
 #    - identifier: gallery
 #      name: Gallery
@@ -142,26 +123,26 @@ params:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "PDI Data Interface" # Brand name for the brand | default is the title variable
+    brandName: "Home" # Brand name for the brand | default is the title variable
     disableSearch: true
     # searchPlaceholder: "Search"
     stickyNavBar:
       enable : true
-      showOnScrollUp : true
+      showOnScrollUp : false
     enableSeparator: false
     menus:
-      disableAbout: true
+      disableAbout: false
       disableExperience: true
       disableEducation: true
       disableProjects: true
       disableAchievements: true
-      disableContact: true
+      disableContact: false
 
   # Hero
   hero:
     enable: true
-    intro: ""
-    title: "PDI tutorial @SCA/HPCAsia 2026"
+    intro: SCA/HPCAsia 2026, Osaka, Japan 
+    title: Full-day PDI tutorial
     subtitle: "Decoupling I/O in HPC Codes with PDI: From File-based I/O to In-Situ Data Analytics"
     content: |-
       As HPC simulations scale toward exascale, I/O becomes a critical bottleneck due to the growing disparity between compute 
@@ -203,7 +184,7 @@ params:
   # About
   about:
     enable: true
-    title: "People"
+    title: "Team"
     image: "mdls_alpha-compressed_lower_resolution.png"
     imageLink: "https://mdls.fr/"
     extraImages:
@@ -211,8 +192,8 @@ params:
     extraLinks:
       - "https://www.cea.fr/"
     content: |-
-      # [Benoît MARTIN, Ph.D.](https://benoit.martin.eco) CEA/MdlS
-      Benoît Martin is a Research Scientist at Maison de la Simulation, a research laboratory affiliated with CEA, CNRS, 
+      # [Benoît Martin, PhD](https://benoit.martin.eco). CEA/MdlS
+      Benoît Martin is a Research Scientist at Maison developers la Simulation, a research laboratory affiliated with CEA, CNRS, 
       Université Paris-Saclay, and Université Versailles Saint-Quentin. He earned his PhD in distributed systems from 
       Sorbonne Université in Paris, under the supervision of Marc Shapiro. His academic background includes a BSc and an 
       Engineering degree from École Supérieure de Génie Informatique (ESGI) in 2012 and 2015, respectively, as well as 
@@ -222,22 +203,22 @@ params:
       related to distributed systems and programming models. His interests include Transactional Memory Models, 
       Consistency Models for Shared Memory, Conflict-Free Replicated Data Types (CRDTs), and the Actor Model.
 
-      # Jacques MORICE, Ph.D. CEA/MdlS
-      Jacques MORICE is a Research Engineer at Maison de la Simulation, a collaborative laboratory involving CEA, CNRS, Université Paris-Saclay, 
+      # Jacques Morice, PhD. CEA/MdlS
+      Jacques Morice is a Research Engineer at Maison de la Simulation, a collaborative laboratory involving CEA, CNRS, Université Paris-Saclay, 
       and Université Versailles Saint-Quentin. He joined the PDI team in October 2024 in the goal of developing software to 
       bridge between physical simulation, data analysis, and IA in the context of high-performance computing. 
       Jacques obtained a PhD in applied mathematics and scientific computing from the University of Bordeaux I. 
       Before joining the PDI team, he worked on software development for physical applications (for example FreeFEM).
       
-      # Julian AURIAC CEA/MdlS
-      Julian AURIAC is Research Engineer in computer science, HPC & AI, currently working at the Maison de la Simulation (MdlS), 
+      # Julian Auriac. CEA/MdlS
+      Julian Auriac is Research Engineer in computer science, HPC & AI, currently working at the Maison de la Simulation (MdlS), 
       a french collaborative laboratory involving CEA, CNRS, and UVSQ. He is the latest addition to the PDI team, 
       where his work focuses on PDI core and the DEISA plugin through the lenses of high-performance computing 
       and parallel software engineering. After his engineering school, Julian specialized in HPC & AI through a 
       specialized master's course.
 
-      # [Julien BIGOT, Ph.D.](https://work.julien-bigot.fr) CEA/MdlS
-      Julien BIGOT is a permanent CEA computer scientist at Maison de la Simulation where he leads the Science of Computing team. 
+      # [Julien Bigot, PhD](https://work.julien-bigot.fr). CEA/MdlS
+      Julien Bigot is a permanent CEA computer scientist at Maison de la Simulation where he leads the Science of Computing team. 
       His research focuses on programming models for high-performance computing. He is especially interested in the 
       question of separation of concerns between the simulated domain specific aspects and optimization aspects.
       He aims to concretize his research into production-level software like the DDC, Deisa, or PDI libraries 
@@ -248,7 +229,7 @@ params:
       In the Exa-DI project, he co-leads the work on software packaging, deployment, and CI/CD, and in the Exa-Soft project,
       he takes part in the work on GPU programming models.
 
-      # [Yushan WANG, PhD](https://fr.linkedin.com/in/yushan-wang-cea). CEA/MdlS
+      # [Yushan Wang, PhD](https://fr.linkedin.com/in/yushan-wang-cea). CEA/MdlS
       Yushan Wang has been a permanent research engineer at Maison de la Simulation, CEA Saclay, since 2021. 
       She earned her Ph.D. in Computer Science in 2015, specializing in optimization of computational fluid dynamics (CFD) 
       simulations for heterogeneous computing environments. Before joining Maison de la Simulation, she worked as an engineer 
