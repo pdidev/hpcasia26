@@ -15,7 +15,7 @@ Duration:
 : Full-day
 
 Room:
-: TBD
+: 802 (8F)
 
 
 | Time | Topic |
