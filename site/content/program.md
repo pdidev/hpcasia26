@@ -12,10 +12,10 @@ Date:
 : January 26, 2026
 
 Duration:
-: Full-day
+: Full-day (09:30 - 16:30)
 
 Room:
-: TBD
+: 802 (8F)
 
 
 | Time | Topic |
