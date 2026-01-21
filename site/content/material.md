@@ -10,7 +10,7 @@ toc:
 
 ⚠️ Take notice: This tutorial requires a working container environment using [Docker](https://docs.docker.com/engine/install/) or [Podman](https://podman.io/docs/installation).
 
-#### Container environment
+# Container environment
 
 ```
 docker run -it ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
@@ -26,3 +26,13 @@ From within the container environment, you may test that your setup is working u
 [2] SUCCESS
 [3] SUCCESS
 ```
+
+
+# Deisa
+
+```shell
+docker run -it -p 8787:8787 -v <TUTORIAL_FOLDER>:/opt/pdi ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
+pip install deisa-dask matplotlib
+```
+
+
