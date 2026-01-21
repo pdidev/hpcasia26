@@ -9,7 +9,7 @@
  &lt;/a&gt;
 
 .&lt;/p&gt;
-&lt;h4 id="container-environment"&gt;Container environment&lt;/h4&gt;
+&lt;h1 id="container-environment"&gt;Container environment&lt;/h1&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;docker run -it ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;From within the container environment, you may test that your setup is working using the dedicated script:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;./environment_check_script
@@ -18,7 +18,10 @@
 [1] SUCCESS
 [2] SUCCESS
 [3] SUCCESS
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Program</title><link>https://pdi.dev/hpcasia26/program/</link><pubDate>Sat, 08 Nov 2025 13:20:33 +0100</pubDate><guid>https://pdi.dev/hpcasia26/program/</guid><description>&lt;dl&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id="deisa"&gt;Deisa&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run -it -p 8787:8787 -v &amp;lt;TUTORIAL_FOLDER&amp;gt;:/opt/pdi ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pip install deisa-dask matplotlib
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Program</title><link>https://pdi.dev/hpcasia26/program/</link><pubDate>Sat, 08 Nov 2025 13:20:33 +0100</pubDate><guid>https://pdi.dev/hpcasia26/program/</guid><description>&lt;dl&gt;
 &lt;dt&gt;Date:&lt;/dt&gt;
 &lt;dd&gt;January 26, 2026&lt;/dd&gt;
 &lt;dt&gt;Duration:&lt;/dt&gt;
