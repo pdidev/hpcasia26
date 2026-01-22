@@ -10,21 +10,15 @@
 
 .&lt;/p&gt;
 &lt;h1 id="container-environment"&gt;Container environment&lt;/h1&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;docker run -it ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;From within the container environment, you may test that your setup is working using the dedicated script:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;./environment_check_script
-[...]
-[0] SUCCESS 
-[1] SUCCESS
-[2] SUCCESS
-[3] SUCCESS
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id="deisa"&gt;Deisa&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run -it -u root -p 8787:8787 -v &amp;lt;TUTORIAL_FOLDER&amp;gt;:/tutorial ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pip install deisa-dask matplotlib
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The container image, by default, runs rootless. A &lt;code&gt;pdi&lt;/code&gt; user is created and used within the container.
-When using podman, and to avoid access rights on bind-mounted volumes, you may set the running user as root by specifying &lt;code&gt;-u root&lt;/code&gt;.
-This will run as root inside the container and as the current user (&lt;code&gt;id -u&lt;/code&gt;) from the host.
-You may check this using: &lt;code&gt;podman top -l user huser&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Program</title><link>https://pdi.dev/hpcasia26/program/</link><pubDate>Sat, 08 Nov 2025 13:20:33 +0100</pubDate><guid>https://pdi.dev/hpcasia26/program/</guid><description>&lt;dl&gt;
+&lt;h2 id="using-an-embedded-text-editor-vimnano"&gt;Using an embedded text editor (vim/nano)&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run -it ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vim
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="using-your-own-ide-eg-vscode"&gt;Using your own IDE (eg: vscode)&lt;/h2&gt;
+&lt;p&gt;If you want to use your own IDE, you may bind-mount a local folder to the container:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# move to a folder in which to git clone (eg: cd /tmp).&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone git@github.com:pdidev/tutorial.git -b tutorial_HPCAsia
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;podman run -it -u root -v tutorial:/opt/tutorial ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You may now open the cloned tutorial folder with your favorite IDE.&lt;/p&gt;</description></item><item><title>Program</title><link>https://pdi.dev/hpcasia26/program/</link><pubDate>Sat, 08 Nov 2025 13:20:33 +0100</pubDate><guid>https://pdi.dev/hpcasia26/program/</guid><description>&lt;dl&gt;
 &lt;dt&gt;Date:&lt;/dt&gt;
 &lt;dd&gt;January 26, 2026&lt;/dd&gt;
 &lt;dt&gt;Duration:&lt;/dt&gt;
