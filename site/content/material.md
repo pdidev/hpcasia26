@@ -12,13 +12,31 @@ toc:
 
 # Container environment
 
-```
+## Using an embedded text editor (vim/nano) 
+
+```shell
 docker run -it ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
+vim
 ```
 
-From within the container environment, you may test that your setup is working using the dedicated script:
+## Using your own IDE (eg: vscode)
 
+If you want to use your own IDE, you may bind-mount a local folder to the container:
+
+```shell
+# move to a folder in which to git clone (eg: cd /tmp).
+git clone git@github.com:pdidev/tutorial.git -b tutorial_HPCAsia
+podman run -it -u root -v tutorial:/opt/tutorial ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
 ```
+
+You may now open the cloned tutorial folder with your favorite IDE.
+
+
+## Checking your environment
+
+From within the container environment, you may test that your setup is working using the dedicated script from the tutorial folder:
+
+```shell
 ./environment_check_script
 [...]
 [0] SUCCESS 
