@@ -10,6 +10,10 @@ toc:
 
 ⚠️ Take notice: This tutorial requires a working container environment using [Docker](https://docs.docker.com/engine/install/) or [Podman](https://podman.io/docs/installation).
 
+⚠️ Prior to the start of the tutorial session, to avoid overwhelming the venue's wifi, you may download the docker/podman container image using the following command: 
+`docker pull ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest`
+
+
 # Container environment
 
 ## Using an embedded text editor (vim/nano) 
