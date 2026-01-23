@@ -9,16 +9,14 @@
  &lt;/a&gt;
 
 .&lt;/p&gt;
+&lt;p&gt;⚠️ Prior to the start of the tutorial session, to avoid overwhelming the venue&amp;rsquo;s wifi, you may download the docker/podman container image using the following command:
+&lt;code&gt;docker pull ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest&lt;/code&gt;&lt;/p&gt;
 &lt;h1 id="container-environment"&gt;Container environment&lt;/h1&gt;
 &lt;h2 id="using-an-embedded-text-editor-vimnano"&gt;Using an embedded text editor (vim/nano)&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run -it ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vim
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="using-your-own-ide-eg-vscode"&gt;Using your own IDE (eg: vscode)&lt;/h2&gt;
-&lt;p&gt;If you want to use your own IDE, you may bind-mount a local folder to the container:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# move to a folder in which to git clone (eg: cd /tmp).&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone git@github.com:pdidev/tutorial.git -b tutorial_HPCAsia
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;podman run -it -u root -v tutorial:/opt/tutorial ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You may now open the cloned tutorial folder with your favorite IDE.&lt;/p&gt;</description></item><item><title>Program</title><link>https://pdi.dev/hpcasia26/program/</link><pubDate>Sat, 08 Nov 2025 13:20:33 +0100</pubDate><guid>https://pdi.dev/hpcasia26/program/</guid><description>&lt;dl&gt;
+&lt;p&gt;If you want to use your own IDE, you may bind-mount a local folder to the container:&lt;/p&gt;</description></item><item><title>Program</title><link>https://pdi.dev/hpcasia26/program/</link><pubDate>Sat, 08 Nov 2025 13:20:33 +0100</pubDate><guid>https://pdi.dev/hpcasia26/program/</guid><description>&lt;dl&gt;
 &lt;dt&gt;Date:&lt;/dt&gt;
 &lt;dd&gt;January 26, 2026&lt;/dd&gt;
 &lt;dt&gt;Duration:&lt;/dt&gt;
