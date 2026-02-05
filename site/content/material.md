@@ -54,7 +54,6 @@ From within the container environment, you may test that your setup is working u
 
 ```shell
 docker run -it -u root -p 8787:8787 -v <TUTORIAL_FOLDER>:/tutorial ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
-pip install deisa-dask matplotlib
 ```
 
 The container image, by default, runs rootless. A `pdi` user is created and used within the container.
@@ -64,5 +63,3 @@ You may check this using: `podman top -l user huser`
 
 The docker/podman command will map local port 8787 to the container's port 8787 that is used by the Dask dashboard.
 You may change the local port to another port.
-
-
