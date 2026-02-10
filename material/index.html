@@ -24,7 +24,6 @@ Home
 </span></span><span style=display:flex><span><span style=color:#f92672>[</span>2<span style=color:#f92672>]</span> SUCCESS
 </span></span><span style=display:flex><span><span style=color:#f92672>[</span>3<span style=color:#f92672>]</span> SUCCESS
 </span></span></code></pre></div><h1 id=deisa>Deisa</h1><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>docker run -it -u root -p 8787:8787 -v &lt;TUTORIAL_FOLDER&gt;:/tutorial ghcr.io/thomas-bouvier/numpex-pdi-tutorial:latest
-</span></span><span style=display:flex><span>pip install deisa-dask matplotlib
 </span></span></code></pre></div><p>The container image, by default, runs rootless. A <code>pdi</code> user is created and used within the container.
 When using podman, and to avoid access rights on bind-mounted volumes, you may set the running user as root by specifying <code>-u root</code>.
 This will run as root inside the container and as the current user (<code>id -u</code>) from the host.
